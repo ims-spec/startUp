@@ -1,15 +1,20 @@
+import React, { useEffect, useState } from "react";
+import Authpage from "./main_pages/Authpage";
+import Dashboard from "./main_pages/Dashboard";
 
-
-import './App.css'
+import "./App.css";
 
 function App() {
+  const [isLogin, setIsLogin] = useState(false);
+  useEffect(() => {
+    setIsLogin(true);
+  }, []);
 
-
-  return (
-    <>
-      <h1>work</h1>
-    </>
-  )
+  if (isLogin) {
+    return <Dashboard />;
+  } else {
+    return <Authpage setIsLogin={setIsLogin} />;
+  }
 }
 
-export default App
+export default App;
