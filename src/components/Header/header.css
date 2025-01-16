@@ -1,0 +1,21 @@
+.header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    align-items: center;
+}
+
+.header_btn {
+    background: #333;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.header_btn:hover {
+    background: #fff;
+    color: #333;
+    transition: .5s;
+}
